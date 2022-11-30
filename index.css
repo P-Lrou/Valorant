@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: url('pictures/background_white_blur.png');
+	background-size: cover;
+	overflow-x: hidden;
+	background-attachment: fixed;
+	background-position: center,center;
+	background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+background: #f6a9af;
+}
+  
+::-webkit-scrollbar-thumb {
+background: #ff4457;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+background: #d13d49;
+}
+
+header{
+	height:	6%;
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	display: flex;
+	position: fixed;
+	z-index: 1	;
+	font-family: 'Fredoka One', cursive;
+	z-index: 4;
+}
+
+header a:nth-child(1){
+	position: relative	;    
+	margin: auto;    
+	font-size: 3vh;
+	transition: 0.5s;
+	animation: moove_header_text 1s;
+}
+
+header a:nth-child(2){
+	position: relative	;    
+	margin: auto;    
+	font-size: 4vh;
+	transition: 0.5s;
+	animation: moove_header_text 1.5s;
+}
+
+header a:nth-child(3){
+	position: relative	;    
+	margin: auto;    
+	font-size: 3vh;
+	transition: 0.5s;
+	animation: moove_header_text 2s;
+}
+
+header a:nth-child(1):hover{
+	transition: 0.5s;
+	font-size: 4vh;
+}
+
+header a:nth-child(2):hover{
+	transition: 0.5s;
+	font-size: 5vh;
+}
+
+header a:nth-child(3):hover{
+	transition: 0.5s;
+	font-size: 4vh;
+}
+
+#main_video{
+	position: relative;
+	width: 100%;
+	margin-bottom:4.5%;
+}
+
+.cards{
+	display: flex;
+}
+
+.item{
+	position: relative;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 1;
+	padding-bottom: 35%;
+	width: 25%;
+	margin-bottom: 1%;
+	font-family: 'Fredoka One', cursive;
+	border-radius: 5vh;
+	box-shadow: 0px 0px 4vh rgb(0,0,0);
+}
+
+h1{
+	transition: 0.5s;
+	text-align: center;
+	color: #ff4457;
+	transition: 0.5s;
+	font-size: 8vh;
+}
+
+h2{
+	position: absolute;
+	top: 20%;
+	text-align: center;
+	color: #fc7580;
+	font-size: 3.5vh;
+}
+
+.item p{
+	position: absolute;
+	top: 31%;
+	text-align: center;
+	font-size: 3vh;
+	padding: 5%;
+	color: rgba(0,0,0,.8);
+}
+
+.button_all{
+	position: absolute;
+	height: 12%;
+	width: 60%;
+	top: 80%;
+	margin-left: 20%;
+	font-size: 2vh;
+	font-family: 'Fredoka One', cursive;
+	color: white;
+	border-style: none;
+	transition: 0.5s;
+	background-color: #ff4457;
+}
+.button_all:hover{
+	background-color: #d13d49;
+	border-radius: 20px;
+	transition: 0.5s;
+}
+
+@keyframes moove_header_text{
+	from{
+		right: -100%;
+	}
+	to{
+		right: 0%;
+	}
+}
+@media screen and (max-width:1650px){
+	.cards{
+		display: inline;
+	}
+	
+	.item{
+		position: relative;
+		background-color: rgba(255, 255, 255, 0.8);
+		z-index: 1;
+		padding-bottom: 40%;
+		width: 80%;
+		border-radius: 20px;
+		margin-bottom: 1%;
+		font-family: 'Fredoka One', cursive;
+	}
+	
+	h1{
+		position: absolute;
+		transition: 0.5s;
+		color: #ff4457;
+		transition: 0.5s;
+		font-size: 8vh;
+	}
+	
+	h2{
+		position: absolute;
+		top: 35%;
+		text-align: left;
+		color: #fc7580;
+		font-size: 3vh;
+	}
+
+	.item p{
+		position: absolute;
+		top: 50%;
+		text-align: left;
+		font-size: 2vh;
+		color: rgba(0,0,0,.8);
+	}
+
+	.button_all{
+		position: absolute;
+		height: 20%;
+		width: 20%;
+		top: 70%;
+		margin-left: 75%;
+		font-family: 'Fredoka One', cursive;
+		color: white;
+		border-style: none;
+		transition: 0.5s;
+		background-color: #ff4457;
+	}
+}
+
+@media screen and (orientation:portrait){
+	.cards{
+		display: inline;
+	}
+	
+	.item{
+		position: relative;
+		background-color: rgba(255, 255, 255, 0.8);
+		z-index: 1;
+		padding-bottom: 95%;
+		width: 85%;
+		border-radius: 20px;
+		margin-bottom: 1%;
+		font-family: 'Fredoka One', cursive;
+	}
+	
+	h1{
+		position: relative;
+		transition: 0.5s;
+		text-align: center;
+		color: #ff4457;
+		transition: 0.5s;
+		font-size: 6vh;
+	}
+	
+	h2{
+		position: absolute;
+		top: 20%;
+		text-align: center;
+		color: #fc7580;
+		font-size: 2vh;
+	}
+	
+	.item p{
+		position: absolute;
+		top: 35%;
+		text-align: center;
+		font-size: 2vh;
+		color: rgba(0,0,0,.8);
+	}
+	
+	.button_all{
+		position: absolute;
+		height: 10%;
+		width: 50%;
+		top: 80%;
+		margin-left: 25%;
+		font-family: 'Fredoka One', cursive;
+		color: white;
+		border-style: none;
+		transition: 0.5s;
+		background-color: #ff4457;
+	}
+}

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: url('pictures/background_white.png');
+	background-size: cover;
+	overflow-x: hidden;
+	background-attachment: fixed;
+	background-position: center,center;
+	background-repeat: no-repeat;
+}
+
+header{
+	height:	6%;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+	display: flex;
+	position: absolute;
+	font-family: 'Fredoka One', cursive;
+}
+
+header a:nth-child(1){
+	position: relative	;    
+	margin: auto;    
+	font-size: 3vh;
+	transition: 0.5s;
+	animation: moove_header_text 1s;
+}
+
+header a:nth-child(2){
+	position: relative	;    
+	margin: auto;    
+	font-size: 4vh;
+	transition: 0.5s;
+	animation: moove_header_text 1.5s;
+}
+
+header a:nth-child(3){
+	position: relative	;    
+	margin: auto;    
+	font-size: 3vh;
+	transition: 0.5s;
+	animation: moove_header_text 2s;
+}
+
+header a:nth-child(1):hover{
+	transition: 0.5s;
+	font-size: 4vh;
+}
+
+header a:nth-child(2):hover{
+	transition: 0.5s;
+	font-size: 5vh;
+}
+
+header a:nth-child(3):hover{
+	transition: 0.5s;
+	font-size: 4vh;
+}
+
+.formulaires{
+	position: absolute;
+	top: 21%;
+	left: 17%;
+	background-color: rgba(255,255,255,.8);
+	z-index: 1;
+	width: 66%;
+	border-radius: 20px;
+	font-family: 'Fredoka One', cursive;
+}
+
+#formu_image{
+	width: 43%;
+	height: 43%;
+	border-radius: 20px;
+}
+
+p{
+	position: absolute;
+    color: #ff4457;
+	left: 50%;
+	font-size: 8vh;
+}
+form{
+	position: absolute;
+	top: 35%;
+	left: 58%;
+}
+.input_1{
+    font-family: 'Fredoka One', cursive;
+    width: 50%;
+    margin: auto;
+    font-size: 2.25vh;
+    margin-bottom: 0.5vh;
+}
+
+.input_2{
+    font-family: 'Fredoka One', cursive;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 4vh;
+    border-color: #ff4457;
+    border-style: solid;
+    padding: 0.5vh;
+}
+
+.submiting{
+	position: absolute;
+    background-color: #ff4457;
+    font-family: 'Fredoka One', cursive;
+    width: 60%;
+    padding:2%;
+	left: 50%;
+    color: white;
+    margin-top: 3vh;
+    border-style: none;
+}
+
+.submiting:hover{
+    cursor:pointer;
+}
+
+@keyframes moove_header_text{
+	from{
+		right: -100%;
+	}
+	to{
+		right: 0%;
+	}
+}
+
+@media screen and (orientation:portrait){
+	.formulaires{
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		background-color: rgba(255,255,255,.8);
+		z-index: 1;
+		width: 80%;
+		height: 80%;
+		border-radius: 20px;
+		font-family: 'Fredoka One', cursive;
+	}
+	
+	#formu_image{
+		position: absolute;
+		top: 10%;
+		width: 100%;
+		border-radius: 20px;
+	}
+	
+	p{
+		position: absolute;
+		color: #ff4457;
+		left: 4%;
+		font-size: 5vh;
+	}
+	form{
+		position: absolute;
+		top: 55%;
+		left: 10%;
+	}
+
+	.input_1{
+		font-family: 'Fredoka One', cursive;
+		width: 50%;
+		margin: auto;
+		font-size: 2.25vh;
+		margin-bottom: 0.5vh;
+	}
+	
+	.input_2{
+		font-family: 'Fredoka One', cursive;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 4vh;
+		border-color: #ff4457;
+		border-style: solid;
+		padding: 0.5vh;
+	}
+	
+	.submiting{
+		position: absolute;
+		background-color: #ff4457;
+		font-family: 'Fredoka One', cursive;
+		width: 60%;
+		padding:2%;
+		left: 35%;
+		top: 90%;
+		color: white;
+		margin-top: 3vh;
+		border-style: none;
+	}
+	
+	.submiting:hover{
+		cursor:pointer;
+	}
+
+}
